@@ -1,0 +1,55 @@
+<project name="Elda" default="schemagen" basedir="..">
+	<description>
+		ANT task to perform vocabulary class building using schemagen.
+		Classpath is inherited from Maven.
+	</description>
+
+	<property name="src" location="${basedir}/src" />
+
+	<target name="testUpToDate">
+
+		<uptodate 
+			property="schemagen_api_UpToDate"
+			srcfile="${basedir}/../vocabs/api.ttl"
+			targetfile="${src}/main/java/com/epimorphics/lda/vocabularies/API.java"
+		/>
+
+		<uptodate 
+			property="schemagen_extras_UpToDate"
+			srcfile="${basedir}/../vocabs/extras.ttl"
+			targetfile="${src}/main/java/com/epimorphics/lda/vocabularies/EXTRAS.java"
+		/>
+	</target>
+
+	<target name="schemagen_command" unless="schemagen_${what}_UpToDate" depends="testUpToDate">
+		<java className="jena.schemagen" classPath="${classpath}" failonerror="true">
+			<arg value="-i" /> <arg value="${basedir}/../vocabs/${what}.ttl" />
+			<arg value="-a" /> <arg value="${namespace}" />
+			<arg value="-o" /> <arg value="${src}/main/java/" />
+			<arg value="--package" /> <arg value="com.epimorphics.lda.vocabularies" />
+			<arg value="-n" /> <arg value="${CLASSNAME}" />
+			<arg value="--inference" />
+		</java>
+		<echo>schemagen ${CLASSNAME} completed</echo>
+	</target>
+
+    <target name="schemagen_API">
+        <antcall target="schemagen_command">
+            <param name="what" value="api"/>
+        	<param name="namespace" value="http://purl.org/linked-data/api/vocab#" />
+            <param name="CLASSNAME" value="API"/>
+        </antcall>  
+    </target>
+
+	<target name="schemagen_EXTRAS">
+		<antcall target="schemagen_command">
+			<param name="what" value="extras"/>
+            <param name="namespace" value="http://www.epimorphics.com/vocabularies/lda#" />
+			<param name="CLASSNAME" value="EXTRAS"/>
+		</antcall>	
+	</target>
+	
+	<target name="schemagen" depends="schemagen_API,schemagen_EXTRAS">
+	</target>
+	
+</project>
