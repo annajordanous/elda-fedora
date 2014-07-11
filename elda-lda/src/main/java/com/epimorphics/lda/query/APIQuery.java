@@ -699,7 +699,7 @@ public class APIQuery implements VarSupply, WantsMetadata {
 			StringBuilder q = new StringBuilder();
 			q.append("SELECT ");
 			if (orderExpressions.length() > 0) q.append("DISTINCT ");
-			q.append(SELECT_VAR.name());
+			q.append(SELECT_VAR.name());     // **** AJ TODO Adapt for Mulgara queries
 			assembleWherePart(q, b, pl);
 			if (orderExpressions.length() > 0) {
 				q.append(" ORDER BY ");
@@ -825,7 +825,7 @@ public class APIQuery implements VarSupply, WantsMetadata {
 	 * Return the select query that would be run or a plain string for the
 	 * resource
 	 */
-	public String getQueryString(APISpec spec, Bindings call) {
+	public String getQueryString(APISpec spec, Bindings call) {   // **** AJ TODO
 		return isFixedSubject() && isItemEndpoint 
 			? "<"+ subjectResource.getURI() + ">" 
 			: assembleSelectQuery(call,	spec.getPrefixMap())
@@ -836,7 +836,7 @@ public class APIQuery implements VarSupply, WantsMetadata {
 	 * Run the defined query against the datasource
 	 */
 	public APIResultSet runQuery(NoteBoard nb, Controls c, APISpec spec, Cache cache, Bindings b, View view) {
-		Source source = spec.getDataSource();
+		Source source = spec.getDataSource();  // **** AJ TODO
 		try {
 			nb.expiresAt = viewSensitiveExpiryTime(spec, view);
 			Integer totalCount = requestTotalCount(nb.expiresAt, c, cache, source, b, spec.getPrefixMap());
