@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.epimorphics.lda.tests.TestAPI
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.262 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.245 sec

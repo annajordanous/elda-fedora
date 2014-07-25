@@ -699,7 +699,8 @@ public class APIQuery implements VarSupply, WantsMetadata {
 			StringBuilder q = new StringBuilder();
 			q.append("SELECT ");
 			if (orderExpressions.length() > 0) q.append("DISTINCT ");
-			q.append(SELECT_VAR.name());     // **** AJ TODO Adapt for Mulgara queries
+			q.append(SELECT_VAR.name());     
+                        q.append("?property ?object ");// **** AJ Addition to adapt for Mulgara queries
 			assembleWherePart(q, b, pl);
 			if (orderExpressions.length() > 0) {
 				q.append(" ORDER BY ");

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="1.88" errors="0" skipped="0" tests="50" name="com.epimorphics.lda.acceptance.tests.TestFramework">
+<testsuite failures="0" time="1.937" errors="0" skipped="0" tests="50" name="com.epimorphics.lda.acceptance.tests.TestFramework">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/java/jdk1.7.0_02/jre/lib/amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/usr/local/elda"/>
+    <property name="user.dir" value="/home/AJordanous/elda-fedora"/>
     <property name="java.runtime.version" value="1.7.0_02-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/java/jdk1.7.0_02/jre/lib/endorsed"/>
@@ -26,22 +26,22 @@
     <property name="os.name" value="Linux"/>
     <property name="classworlds.conf" value="/opt/netbeans-7.1.2/java/maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
-    <property name="java.library.path" value="/usr/lib:/usr/local/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="2.6.18-371.9.1.el5.centos.plus"/>
-    <property name="user.home" value="/home/fedora"/>
+    <property name="user.home" value="/root"/>
     <property name="user.timezone" value="Europe/Belfast"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="ANSI_X3.4-1968"/>
     <property name="java.specification.version" value="1.7"/>
-    <property name="user.name" value="fedora"/>
+    <property name="user.name" value="root"/>
     <property name="java.class.path" value="/opt/netbeans-7.1.2/java/maven/boot/plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/java/jdk1.7.0_02/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher --fail-at-end install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher --also-make --projects elda-bundled install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -56,57 +56,56 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.021" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[0]"/>
-  <testcase time="0.025" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[1]"/>
-  <testcase time="0.01" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[2]"/>
+  <testcase time="0.019" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[0]"/>
+  <testcase time="0.023" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[1]"/>
+  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[2]"/>
   <testcase time="0.007" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[3]"/>
-  <testcase time="0.055" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[4]"/>
+  <testcase time="0.054" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[4]"/>
   <testcase time="0.031" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[5]"/>
-  <testcase time="0.019" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[6]"/>
+  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[6]"/>
   <testcase time="0.02" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[7]"/>
-  <testcase time="0.008" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[8]"/>
-  <testcase time="0.018" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[9]"/>
+  <testcase time="0.009" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[8]"/>
+  <testcase time="0.017" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[9]"/>
   <testcase time="0.026" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[10]"/>
-  <testcase time="0.011" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[11]"/>
-  <testcase time="0.017" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[12]"/>
-  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[13]"/>
+  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[11]"/>
+  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[12]"/>
+  <testcase time="0.013" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[13]"/>
   <testcase time="0.032" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[14]"/>
-  <testcase time="0.027" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[15]"/>
-  <testcase time="0.021" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[16]"/>
+  <testcase time="0.025" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[15]"/>
+  <testcase time="0.02" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[16]"/>
   <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[17]"/>
-  <testcase time="0.011" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[18]"/>
-  <testcase time="0.078" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[19]"/>
-  <testcase time="0.045" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[20]"/>
-  <testcase time="0.017" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[21]"/>
+  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[18]"/>
+  <testcase time="0.08" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[19]"/>
+  <testcase time="0.048" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[20]"/>
+  <testcase time="0.015" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[21]"/>
   <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[22]"/>
-  <testcase time="0.011" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[23]"/>
-  <testcase time="0.011" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[24]"/>
-  <testcase time="0.015" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[25]"/>
-  <testcase time="0.021" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[26]"/>
-  <testcase time="0.015" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[27]"/>
-  <testcase time="0.014" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[28]"/>
-  <testcase time="0.014" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[29]"/>
+  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[23]"/>
+  <testcase time="0.027" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[24]"/>
+  <testcase time="0.014" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[25]"/>
+  <testcase time="0.023" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[26]"/>
+  <testcase time="0.018" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[27]"/>
+  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[28]"/>
+  <testcase time="0.011" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[29]"/>
   <testcase time="0.007" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[30]"/>
-  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[31]"/>
-  <testcase time="0.051" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[32]"/>
-  <testcase time="0.031" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[33]"/>
-  <testcase time="0.282" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[34]"/>
-  <testcase time="0.033" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[35]"/>
-  <testcase time="0.02" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[36]"/>
-  <testcase time="0.006" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[37]"/>
-  <testcase time="0.007" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[38]"/>
-  <testcase time="0.035" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[39]"/>
+  <testcase time="0.01" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[31]"/>
+  <testcase time="0.053" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[32]"/>
+  <testcase time="0.03" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[33]"/>
+  <testcase time="0.284" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[34]"/>
+  <testcase time="0.02" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[35]"/>
+  <testcase time="0.019" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[36]"/>
+  <testcase time="0.007" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[37]"/>
+  <testcase time="0.013" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[38]"/>
+  <testcase time="0.04" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[39]"/>
   <testcase time="0.007" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[40]"/>
-  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[41]"/>
-  <testcase time="0.018" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[42]"/>
-  <testcase time="0.255" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[43]"/>
-  <testcase time="0.027" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[44]"/>
-  <testcase time="0.012" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[45]"/>
-  <testcase time="0.015" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[46]"/>
-  <testcase time="0.017" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[47]"/>
-  <testcase time="0.006" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[48]"/>
+  <testcase time="0.036" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[41]"/>
+  <testcase time="0.016" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[42]"/>
+  <testcase time="0.243" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[43]"/>
+  <testcase time="0.04" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[44]"/>
+  <testcase time="0.014" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[45]"/>
+  <testcase time="0.013" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[46]"/>
+  <testcase time="0.021" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[47]"/>
+  <testcase time="0.005" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[48]"/>
   <testcase time="0.006" classname="com.epimorphics.lda.acceptance.tests.TestFramework" name="RUN[49]"/>
 </testsuite>
