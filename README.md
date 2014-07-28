@@ -1,5 +1,14 @@
 <h1>Elda, an implementation of the Linked Data API</h1>
 
+To install this demo of elda on the DTC tomcat server:
+<ul>
+<li>Copy the war file inside elda-bundled/target/ into the 
+tomcat/webapps folder and rename this file to be api.war </li>
+<li>Copy elda-common/target/elda-common/specs/dtc-archive.ttl into 
+/etc/elda/conf.d/api folder (creating this folder if necessary) </li>
+</ul>
+
+
 <p>
 Elda is a Java implementation of the 
 <a href="http://code.google.com/p/linked-data-api/" rel="nofollow">Linked Data API</a>,
