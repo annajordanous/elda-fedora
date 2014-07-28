@@ -1,0 +1,69 @@
+# This LDA description is a configuration for the DEFRA DTC archive linked data.
+# This is the basis of the DEFRA DTC Archive demonstration API - 
+# for accessing Linked Data from the DEFRA DTC archive
+# 
+# The /anything endpoint will display some (10) items from the SPARQL
+# endpoint that have an rdf:type property. 
+#
+# The /about?resource=URI endpoint will display information about the
+# resource with the given URI from that SPARQL endpoint.
+
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spec:	<http://www.dtcarchive.org/api/api-config#> .
+@prefix api:    <http://purl.org/linked-data/api/vocab#> .
+@prefix elda:   <http://www.epimorphics.com/vocabularies/lda#> .
+
+spec:defradtc a api:API
+	; api:base "/api/"
+	; rdfs:label "DEFRA DTC Archive demonstration API - for accessing Linked Data from the DEFRA DTC archive"
+	; api:sparqlEndpoint <http://localhost:8080/fedora/risearch?type=triples&lang=sparql&format=Turtle>
+#	; api:sparqlEndpoint <http://localhost:8080/fedora/risearch?type=tuples&lang=sparql&format=Simple>
+#	; api:sparqlEndpoint <http://localhost:8080/fedora/risearch>
+	; api:defaultViewer api:labelledDescribeViewer
+	; api:defaultFormatter spec:HtmlFormatter 
+	; api:viewer api:describeViewer, api:labelledDescribeViewer, api:basicViewer
+	; api:endpoint spec:about, spec:anything, spec:use_instead
+	; api:variable [api:name "_exceptionIfEmpty"; api:value "no"]
+	; api:variable [api:name "_resourceRoot"; api:value "http://localhost:8080/api/"]
+	; elda:supportsNestedSelect false
+	; spec:isMulgaraTriplestore true	
+	.
+	
+spec:HtmlFormatter a api:XsltFormatter 
+	; api:name "html" 
+	; api:mimeType "text/html; charset=utf-8" 
+	; api:stylesheet "xslt/defradtc.xsl"
+	.
+
+
+###################################################
+################# Data endpoints ##################
+###################################################
+
+# Describe a generic 'thing' as an example of an itemEndpoint.
+# http://localhost:8080/api/about?resource=info:fedora/vocab:2852
+#
+spec:about a api:ItemEndpoint
+    ; api:uriTemplate     "/about?resource={uri}"
+    ; rdfs:comment        "A generic item endpoint API for asking about a specific thing by 'uri'."
+    ; api:itemTemplate    "{uri}"
+    ; api:viewer          api:basicViewer, api:describeViewer, api:labelledDescribeViewer
+    ; api:defaultViewer   api:describeViewer
+    .
+
+#
+# List 'anything' endpoint
+#
+# spec:anything a api:ListEndpoint
+#    ; api:name 		"anything"
+#    ; rdfs:comment 	"A listing endpoint for all texts defined explicitly as variants of another text"
+#    ; api:uriTemplate   "/anything"
+#    ; api:selector 	[api:where "?item <http://purl.org/dc/elements/1.1/type> ?type "]
+#    ; api:selector		[api:where   "?item <http://purl.org/dc/elements/1.1/type> ?v1 . FILTER (!isBlank(?item)) "]
+#    ; api:exampleRequestPath "/anything" 
+##
+## no selector - defers everything to URI params
+##
+#     ; api:viewer api:describeViewer, api:basicViewer, api:labelledDescribeViewer
+#     ; api:defaultViewer   api:describeViewer
+#     .
