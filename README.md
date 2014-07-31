@@ -1,13 +1,13 @@
 <h1>Elda, an implementation of the Linked Data API</h1>
 
-To install this demo of elda on the DTC tomcat server:
+To install this demo of elda on the DTC tomcat server (from https://github.com/annajordanous/elda-fedora):
 <ul>
-<li>Copy the war file inside elda-bundled/target/ into the 
-tomcat/webapps folder and rename this file to be api.war </li>
-<li>Copy elda-common/target/elda-common/specs/dtc-archive.ttl into 
-/etc/elda/conf.d/api folder (creating this folder if necessary) </li>
+<li> Download the elda-bundled.war/target/elda-bundled.war file</li>
+<li> Rename it as api.war</li>
+<li> Put this file in $FEDORA_HOME/tomcat/webapps</li>
+<li> Create a directory /etc/elda/conf.d/api</li> 
+<li> Download the dtc-archive spec file at elda-common/target/elda-common/specs/dtc-archive.ttl and put it into this new directory.</li>
 </ul>
-
 
 <p>
 Elda is a Java implementation of the 
